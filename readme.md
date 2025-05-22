@@ -1,6 +1,6 @@
 # Disable Achievements
 
-Modification for Crusader Kings 3 that disables achievements.
+Modification for Crusader Kings 3 that disables all achievements.
 
 ## Motivation
 
@@ -14,7 +14,7 @@ WIP, untested, use at your risk.
 
 ## TODO
 
-`achievement list` on console should show nothing.
+How to check if achievements are disabled?
 
 Delete body of all scripts in `common/scripted_effects/00_achievement_effects.txt`. If done with a Python script on user's computer, does not break copyright.
 
