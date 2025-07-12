@@ -20,7 +20,7 @@ I usually have my own targets, such as
 * all dark elves houses' members are dead or landless;
 * I am the emperor of Morrowind.
 
-Achievements accounting is just a waste of CPU resources for me.
+Achievements accounting is nothing useful for me, it just spams my `error.log` and wastes CPU and RAM resources.
 
 I therefore decided to completely disable achievements.
 
