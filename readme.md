@@ -8,10 +8,6 @@ Modification for Crusader Kings 3 that disables all achievements.
 
 Do not know if the mod works for other versions.
 
-## Status
-
-WIP, untested, use at your risk.
-
 ## Motivation
 
 I recently discovered that some of the code implementing achievements in base game is buggy.
@@ -24,7 +20,7 @@ I usually have my own targets, such as
 * all dark elves houses' members are dead or landless;
 * I am the emperor of Morrowind.
 
-Achievements accounting it is just a waste of CPU resources for me.
+Achievements accounting is just a waste of CPU resources for me.
 
 I therefore decided to completely disable achievements.
 
