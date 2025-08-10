@@ -18,9 +18,11 @@ I usually have my own targets, such as
 * most of my dynasty have scarab blood and pureblood and other good genes;
 * most of my dynasty are of my custom religion and my custom culture;
 * all dark elves houses' members are dead or landless;
-* I am the emperor of Morrowind.
+* I control a good piece of land.
 
-Achievements accounting is nothing useful for me, it just spams my `error.log` and wastes CPU and RAM resources.
+Those targets are not accounted for in achievements.
+
+Achievements accounting is nothing useful for me, it just spams my `error.log` and wastes CPU and RAM resources. Since game engine is not parallelized, the game is CPU-hungry (especially late-game). Calculaing values no one needs is a luxury I cannot afford.
 
 I therefore decided to completely disable achievements.
 
