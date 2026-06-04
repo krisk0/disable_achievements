@@ -1,0 +1,72 @@
+﻿# Adds $FLAG$ to the character never
+add_achievement_flag_effect = {
+	if = {
+		limit = {
+			has_dlc_feature = dlc_da_nope
+		}
+		add_character_flag = $FLAG$
+	}
+}
+
+# Adds $VALUE$ to the character $VARIABLE$ never
+add_achievement_variable_effect = {
+	if = {
+		limit = {
+			has_dlc_feature = dlc_da_nope
+		}
+		if = {
+			limit = {
+				NOT = { has_variable = $VARIABLE$ }
+			}
+			set_variable = {
+				name = $VARIABLE$
+				value = 0
+			}
+		}
+		change_variable = {
+			name = $VARIABLE$
+			add = $VALUE$
+		}
+	}
+}
+
+# Sets $VALUE$ to the global variable named $VARIABLE$ never
+add_achievement_global_variable_effect = {
+	if = {
+		limit = {
+			has_dlc_feature = dlc_da_nope
+		}
+		set_global_variable = {
+			name = $VARIABLE$
+			value = $VALUE$
+		}
+	}
+}
+
+# Adds $FLAG$ to list of unavailable achievements never
+add_to_global_unavailable_achievements_list_effect = {
+	if = {
+		limit = {
+			has_dlc_feature = dlc_da_nope
+		}
+		add_to_global_variable_list = {
+			name = unavailable_achievements
+			target = $FLAG$
+		}
+	}
+}
+
+fp2_had_friend_with_benefits = {
+}
+
+fp2_holiday_in_iberia_check = {
+}
+
+ep2_im_in_my_elements_terrain_grabber_effect = {
+}
+
+player_succeeded_at_a_thousand_and_one_nights_achievement_effect = {
+}
+
+process_tour_achievement_tallies_effect = {
+}

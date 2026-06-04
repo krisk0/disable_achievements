@@ -3,5 +3,5 @@ tags={
 	"Fixes"
 }
 name="Disable Achievements"
-supported_version="1.15.*"
+supported_version="1.18.*"
 replace_path = "common/achievements"

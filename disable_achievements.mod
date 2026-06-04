@@ -3,6 +3,6 @@ tags={
 	"Fixes"
 }
 name="Disable Achievements"
-supported_version="1.15.*"
+replace_path="common/achievements"
+supported_version="1.18.*"
 path="mod/disable_achievements"
-replace_path = "common/achievements"

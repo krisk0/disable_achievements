@@ -4,39 +4,41 @@ Modification for Crusader Kings 3 that disables all achievements.
 
 ## Technical requirements
 
-* Crusader Kings version Crown 1.15.0.2.
+* Crusader Kings version Crown 1.18.*.
 
-Do not know if the mod works for other versions.
+## Language support
+
+All.
 
 ## Motivation
 
-I recently discovered that some of the code implementing achievements in base game is buggy.
+Some code implementing achievements in base game version 1.15.0.2 is buggy.
 
-I usually have my own targets, such as
+I only play in Elder Kings universe. I usually have my own targets, such as
 
-* most of my dynasty are witches;
-* most of my dynasty have scarab blood and pureblood and other good genes;
+* most of my dynasty are witches, some are vampires;
+* most of my dynasty have pureblood and other good genes;
 * most of my dynasty are of my custom religion and my custom culture;
-* all dark elves houses' members are dead or landless;
+* all powerful dynasties such as dark elves houses are dead or landless;
 * I control a good piece of land.
 
 Those targets are not accounted for in achievements.
 
-Achievements accounting is nothing useful for me, it just spams my `error.log` and wastes CPU and RAM resources. Since game engine is not parallelized, the game is CPU-hungry (especially late-game). Calculaing values no one needs is a luxury I cannot afford.
+Achievements accounting is nothing useful for me, it just spams my `error.log` (at least on 1.15.0.2) and wastes CPU and RAM resources. Since the game engine is not fully parallelized, it is CPU-hungry (especially late-game). Calculaing values no one needs is a luxury I cannot afford.
 
 I therefore decided to completely disable achievements.
 
-## Implementation note
+## Warning
 
-To get rid of scripts, file `common/scripted_effects/00_achievement_effects.txt` need to be sanitized. For copyright issues, I do not publish the sanitized file. Instead, I publish a script that empties the file.
+There will be some extra messages in `error.log`, like `Variable 'ce1_canonized_achievement_unlocked' is set but is never used` or `Variable 'ep2_im_in_my_elements_achievement_terrain_list' is used but is never set`. Those only appear at game load but not during gameplay.
 
 ## Installation
 
-1. Install Python3 interpreter.
-2. Unpack .zip.
-3. Change to directory containing `readme.md` (this file), run script: `<PYTHON3> crunch.py <SEARCH_PATH>` where <PYTHON3> is the name of the interpreter and <SEARCH_PATH> is the path to base game directory (any directory that contains base game .txt will do, even whole disk).
-4. On success you will see message like `Success, 9 empty effects`.
-5. Put all files except `readme.md` and `crunch.py` into mod directory.
-6. Activate the mod via launcher called `dowser.exe`.
+1. Unpack to mod directory, omitting `readme.md` (this file).
+2. Activate via launcher called `dowser.exe`.
 
 For more details on mod installation, see [wiki](https://ck3.paradoxwikis.com/Modding#Installing_mods_manually).
+
+## My mods
+
+List of my modifications for CK3, and my load order is [here](https://gist.github.com/krisk0/3c51136a877afd606c184a575400922f).
